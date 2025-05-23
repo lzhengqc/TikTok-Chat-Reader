@@ -21,3 +21,18 @@ This will use the server backend of the [demo site](https://tiktok-chat-reader.z
 ## Screenshot
 
 ![TikTok LIVE Chat Reader (Demo)](https://user-images.githubusercontent.com/59258980/153956504-c585b14b-a50e-43f0-a994-64adcaface2e.png)
+
+## Running with Docker
+
+To build and run this project with Docker, follow these steps:
+
+1.  **Build the Docker image:**
+    ```bash
+    docker build -t tiktok-chat-reader .
+    ```
+
+2.  **Run the Docker container:**
+    ```bash
+    docker run -d -p 8080:80 --name tiktok-chat-reader-container tiktok-chat-reader
+    ```
+    This will start the nginx server and make the application accessible at `http://localhost:8080`.
